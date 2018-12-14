@@ -86,3 +86,13 @@ partOne =
     Random.int 1 10
 
 
+partTwo : Random.Generator Int
+partTwo =
+    let
+        gen =
+            Random.int 1 50
+
+        double =
+            \n -> n * 2
+    in
+    Random.map double gen
