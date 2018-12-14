@@ -79,3 +79,10 @@ view m =
             , H.td [] [ H.text <| String.join ", " m.partFour ]
             ]
         ]
+
+
+partOne : Random.Generator Int
+partOne =
+    Random.int 1 10
+
+
